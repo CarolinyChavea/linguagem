@@ -1,0 +1,65 @@
+#Discentes: Caroliny de M Chaves, Helen Vitoria S França e Walleri Vitoria P Chaves
+# Disciplina: Programação Orientada a Objetos
+# Docente: Camila Serrão
+
+class cliente:
+	
+	def _init_(self, nome, telefone):
+	       self.nome= input("Digite o nome do cliente: ")
+	       self.telefone= input("Digite o telefone do cliente: ")
+	       self.endereco= endereco()
+	      
+	def verificarendereco(self):
+	       return self.endereco
+        
+	def consultanome(self):
+		return self.nome
+		
+##################################
+
+class endereco: 
+
+	def _init_ (self, rua, bairro, numerocs):
+		self.rua= input("Digite o nome da rua: ")
+		self.bairro= input("Digite o bairro: ")
+		self.numerocs= input("Digite o numero da casa: ")
+		
+	def verificarEndereco(self):
+		print("Rua: ",self.rua)
+		print("Bairro: ",self.bairro)
+		print("Numero da casa: ",numerocs)
+		
+##################################
+
+class pedido:
+	def _init_(self):
+		self.cliente= None
+		self.produto= None
+	
+	def pedido (self, cliente, produto):
+		self.cliente=cliente
+		self.produto=produto
+	
+	def registrarPedido(self):
+		return self.cliente.nome,"comprou ",self.produto.nomep
+		
+#################################
+
+class produto :
+	def _init_(self, codigo, nomep):
+		self.codigo= input("Digite o código do produto: ")
+		self.nomep= input("Digite o nome do produto: ")
+		
+#################-##################
+
+from cliente import *
+from pedido import *
+from produto import *
+
+Cliente= cliente()
+Produto= produto()
+pedido1= pedido()
+
+pedido1.pedir(cliente, produto)
+
+print(pedido1.registrarPedido())
