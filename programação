@@ -1,9 +1,3 @@
-#IFRO
-#2º DE INFORMÁTICA MATUTINO
-#Caroliny De Matos Chaves, Helen Vitória S Fraça e Walleri Vitória P Chaves
-#POO
-#USO DO TRY E EXCEPT LINHAS: 17, 157, 163, 177, 217, 225, 233, 292, 299 e etc...
-#USO DO RAISE LINHA: 316
 import os
 import random
 import time
